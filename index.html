@@ -14,7 +14,7 @@
     </head>
     <body>
         <!-- Menu de navegacion -->
-        <header>
+        <header class="container-fluid">
             <div class="menu">
                 <div class="padre__logo">
                     <div class="contenedor__logo"> 
@@ -40,13 +40,13 @@
         </header>
 
         <section class="padre__titulo">
-            <h1 class="titulo__tienda"> Bienvenido a la tienda online Tándem</h1>
+            <h1 class=" titulo__tienda"> Bienvenido a la tienda online Tándem</h1>
         </section>
         
 
 
-        <div class="padre__banner">
-            <img class="banner" src="./imagenes/Banner-provisorio.jpg" alt="">
+        <div class="container-fluid container__banner">
+            <img class=" col-12" src="./imagenes/Banner-provisorio.jpg" alt="">
         </div>
 
         <!--footer-->
@@ -69,7 +69,9 @@
                     
                     <div class="contenedor__emailoff">
                         <h3> Ingrese su mail para recibir ofertas y novedades</h3>
-                        <input type="email" placeholder="Email">
+                        <div class="col-10">
+                        <input type="email" class="form-control" id="FormControlInput3" placeholder="Email">
+                        </div>
 
                     </div>
                     <div class="contenedor__mailcontacto">
