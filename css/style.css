@@ -367,7 +367,7 @@ footer a {
         font-family: "BebasNeue-Regular";
         color: #fff;
         margin: 20px;
-        width: 100vh;
+        width: 100%;
     }
 
     .contenedor__emailoff {
@@ -375,14 +375,16 @@ footer a {
         font-family: "BebasNeue-Regular";
         color: #fff;
         margin: 20px;
-        width: 100vh;
+        width: 500px;
 
     }
+
+
 
     .contenedor__redes__footer {
 
         margin-left: 20px;
-        width: 100vh;
+        width: 100%;
     }
 
 
