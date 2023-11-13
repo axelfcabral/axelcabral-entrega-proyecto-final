@@ -1,125 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../imagenes/emote3.28.png" type="image/x-icon">
-        <!--libreria boostrap-->
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <!--estilos customisables-->
-        <link rel="stylesheet" href="../css/style.css">
-        <!--libreria de iconos-->
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <title>Shop</title>
-    </head>
-    <body>
-        <!-- Menu de navegacion -->
-        <header>
-            <div class="menu">
-                <div class="padre__logo">
-                    <div class="contenedor__logo">
-                        <a href="../index.html" class="texto__logo"><span>Tándem</span></a>
-                    </div>
-                </div>
 
-                <div class="menu__iconos">
-                    <nav class="contenedor__nav">
-                        <input type="checkbox" id="check__menu">
-                        <ul class="navegacion__nav">
-                            <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                            <li class="nav__item"><a href="../paginas/tienda.html">Shop</a></li>
-                            <li class="nav__item"><a href="../paginas/diseños.html">Diseños</a></li>
-                            <li class="nav__item"><a href="../paginas/nosotros.html">Nosotros</a></li>
-                            <li class="nav__item"><a href="../paginas/contacto.html">Contacto</a></li>
-                        </ul>
-                        <label for="check__menu"><box-icon name='menu' size="3.5em" color='#fff'></box-icon></label>
-                    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/emote3.28.png" type="image/x-icon">
+    <!--libreria boostrap-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--estilos customisables-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--libreria de iconos-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Shop</title>
+</head>
+
+<body>
+    <!-- Menu de navegacion -->
+    <header>
+        <div class="menu">
+            <div class="padre__logo">
+                <div class="contenedor__logo">
+                    <a href="../index.html" class="texto__logo"><span>Tándem</span></a>
                 </div>
-                
             </div>
-        </header>
 
-        <section class="padre__titulo">
-            <h1 class="titulo__tienda"> Shop Tándem </h1>
+            <div class="menu__iconos">
+                <nav class="contenedor__nav">
+                    <input type="checkbox" id="check__menu">
+                    <ul class="navegacion__nav">
+                        <li class="nav__item"><a href="../index.html">Inicio</a></li>
+                        <li class="nav__item"><a href="../paginas/tienda.html">Shop</a></li>
+                        <li class="nav__item"><a href="../paginas/diseños.html">Diseños</a></li>
+                        <li class="nav__item"><a href="../paginas/nosotros.html">Nosotros</a></li>
+                        <li class="nav__item"><a href="../paginas/contacto.html">Contacto</a></li>
+                    </ul>
+                    <label for="check__menu"><box-icon name='menu' size="3.5em" color='#fff'></box-icon></label>
+                </nav>
+            </div>
 
-        </section>
+        </div>
+    </header>
 
-        <!--aclaración: Las imagenes son provisorias, luego voy a cambiarlas por un diseño propio-->
+    <section class="padre__titulo">
+        <h1 class="titulo__tienda"> Shop Tándem </h1>
 
-        <section class="padre__remeras">
-                <div class="contenedor__card">
-                    <div class="contenedor__img">
-                    <img class="remera" src="../imagenes-remeras/remera-banana-frente.jpg" alt="producto">
-                    </div>
-                    <div class="descripcion">
-                    <h2>Remera oversize blanca</h2>
-                    <p class="precio">$15.000</p>
-                    <button class="boton__añadir">Añadir al carrito</button>
-                    </div>
+    </section>
+
+    <!--Seccion shop productos-->
+
+    <section class="padre__remeras">
+        <div class="col-md-4 col-sm-6 contenedor__card">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-banana-frente.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize negra banana</h2>
+                <p class="precio">$23.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div> 
+        <div class="col-md-4 col-sm-6 contenedor__card">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-banana-frente-marron.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize marron cl banana</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 contenedor__card">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-banana-frente-violeta.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize violeta banana</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-cajon-frente.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize negra cajon</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-cajon-frente-azul.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize azul cajon</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-cajon-frente-verde.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize verde cajon</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-ojo-frente-marron.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize marron ob ojo</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-ojo-frente.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize negra ojo</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="contenedor__img">
+                <img class="remera" src="../imagenes-remeras/remera-ojo-frente-roja.jpg" alt="producto">
+            </div>
+            <div class="descripcion">
+                <h2>Remera oversize roja ojo</h2>
+                <p class="precio">$15.000</p>
+                <button class="boton__añadir">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section>
+
+        <footer class="padre__footer">
+            <div class="nav__footer">
+                <div class="contenedor__nav__footer">
+                    <h3 class="mf1">MENU</h3>
+                    <ul>
+                        <li class="footer__item"><a href="./index.html">Inicio</a></li>
+                        <li class="footer__item"><a href="./paginas/tienda.html">Shop</a></li>
+                        <li class="footer__item"><a href="./paginas/diseños.html">Diseños</a></li>
+                        <li class="footer__item"><a href="./paginas/nosotros.html">Nosotros</a></li>
+                        <li class="footer__item"><a href="./paginas/contacto.html">Contacto</a></li>
+                    </ul>
+
                 </div>
-                <div class="contenedor__card">
-                    <div class="contenedor__img">
-                    <img class="remera" src="../imagenes-remeras/remera-cajon-frente.jpg" alt="producto">
-                    </div>
-                    <div class="descripcion">
-                    <h2>Remera oversize cajon</h2>
-                    <p class="precio">$15.000</p>
-                    <button class="boton__añadir">Añadir al carrito</button>
-                    </div>
-                </div>
-                <div class="contenedor__card">
-                    <div class="contenedor__img">
-                    <img class="remera" src="../imagenes-remeras/remera-ojo-frente.jpg" alt="producto">
-                    </div>
-                    <div class="descripcion">
-                    <h2>Remera oversize negra</h2>
-                    <p class="precio">$15.000</p>
-                    <button class="boton__añadir">Añadir al carrito</button>
-                    </div>
-                </div>
-        </section>
 
-        <!--footer-->
-        <section>
-        
-            <footer class="padre__footer">
-                <div class="nav__footer">
-                    <div class="contenedor__nav__footer">
-                        <h3 class="mf1">MENU</h3>
-                        <ul>
-                            <li class="footer__item"><a href="./index.html">Inicio</a></li>
-                            <li class="footer__item"><a href="./paginas/tienda.html">Shop</a></li>
-                            <li class="footer__item"><a href="./paginas/diseños.html">Diseños</a></li>
-                            <li class="footer__item"><a href="./paginas/nosotros.html">Nosotros</a></li>
-                            <li class="footer__item"><a href="./paginas/contacto.html">Contacto</a></li>
-                        </ul>
-
-                    </div>
-                    
-                    <div class="contenedor__emailoff">
-                        <h3> Ingrese su mail para recibir ofertas y novedades</h3>
-                        <div class="col-10">
+                <div class="contenedor__emailoff">
+                    <h3> Ingrese su mail para recibir ofertas y novedades</h3>
+                    <div class="col-10">
                         <input type="email" class="form-control" id="FormControlInput3" placeholder="Email">
-                        </div>
-
-                    </div>
-                    <div class="contenedor__mailcontacto">
-                        <h3>CONTACTANOS</h3>
-                        <a href="mailto:axelcabral94@gmail.com">axelabral94@gmail.com</a>
-                    </div>
-                    <div class="contenedor__redes__footer">
-
-                        <a href="https://m.facebook.com/DibujosBonono/" target="_blank"><img src="../imagenes/facebook-logo-24.png"alt=""></img></a>
-                        <a href="https://www.instagram.com/bononodibujos/" target="_blank"><img src="../imagenes/instagram-logo-24.png" alt=""></img></a>
-
                     </div>
 
                 </div>
-            </footer>
+                <div class="contenedor__mailcontacto">
+                    <h3>CONTACTANOS</h3>
+                    <a href="mailto:axelcabral94@gmail.com">axelabral94@gmail.com</a>
+                </div>
+                <div class="contenedor__redes__footer">
 
-        </section>
+                    <a href="https://m.facebook.com/DibujosBonono/" target="_blank"><box-icon name='facebook-circle'
+                            type='logo' color='#ffffff'></box-icon></a>
+                    <a href="https://www.instagram.com/bononodibujos/" target="_blank"><box-icon name='instagram-alt'
+                            type='logo' color='#ffffff'></box-icon></a>
 
-            
+                </div>
 
-    </body>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <!--bootsrap-->
+    <script src="../js/bootstrap.js"></script>
+</body>
+
 </html>
