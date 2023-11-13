@@ -302,13 +302,9 @@ footer a {
 }
 #input-mail-footer {
 
-    width: 90%;
+    width: 330px ;
     padding: 10px;
-    
-   
-     margin: 10px 0;
-    
-   
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f7f7f7;
@@ -431,11 +427,10 @@ footer a {
 
 
 
-
-
-
 /* media queries */
 
+
+/* breackpoint 768px*/
 @media (max-width:768px) {
 
     .contenedor__nav {
@@ -469,18 +464,52 @@ footer a {
 
 
     }
+    /*fin navegacion nav*/
+
+    /*titulo contacto*/
+
+    .contenedor__titulo2{
+
+        margin-top: 50px ;
+    }
 
     .contenedor__nav__footer {
 
         display: none;
     }
 
+    /*fin titulo contacto*/
+
+
+    /* pagina nosotros*/
+
+    .padre__nosotros{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .texto__nosotros{
+
+        font-size: 1.5rem;
+
+    }
+
+    .img__nosotros {
+
+        width: 100%;
+    }
+
+
+    /*comienzo nav*/
     .nav__footer {
         display: grid;
         grid-template-columns: 1, 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-            "email "
+            "email"
             "contacto"
             "redes";
 
@@ -506,13 +535,44 @@ footer a {
 
     #input-mail-footer {
 
-        width: 90%;
+        width: 330px ;
         padding: 10px;
-        
-       
-         margin: 10px 0;
-        
-       
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .contenedor__banana, .contenedor__cajon,.contenedor__ojo{
+
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 0.5rem;
+    }
+  
+
+}
+
+ /* breackpoint 576px*/
+ @media (max-width:576px) {
+
+    .contenedor__emailoff {
+
+        font-family: "BebasNeue-Regular";
+        color: #fff;
+        margin: 20px;
+        width: 300px;
+
+    }
+
+    #input-mail-footer {
+
+        width: 300px;
+        padding: 10px;
+        margin: 10px 0;
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #f7f7f7;
@@ -520,8 +580,6 @@ footer a {
         color: #333;
       }
 
-    }
-
-
-
+ }
+ 
 
