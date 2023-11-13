@@ -300,6 +300,21 @@ footer a {
     margin-top: 20px;
 
 }
+#input-mail-footer {
+
+    width: 90%;
+    padding: 10px;
+    
+   
+     margin: 10px 0;
+    
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+  }
 
 
 .contenedor__redes__footer {
@@ -375,7 +390,25 @@ footer a {
         font-family: "BebasNeue-Regular";
         color: #fff;
         margin: 20px;
-        width: 500px;
+        width: 450px;
+
+    }
+
+    #input-mail-footer {
+
+        width: 90%;
+        padding: 10px;
+        
+       
+         margin: 10px 0;
+        
+       
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        font-size: 16px;
+        color: #333;
+      }
 
     }
 
