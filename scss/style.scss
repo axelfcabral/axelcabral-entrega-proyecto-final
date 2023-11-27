@@ -1,0 +1,395 @@
+@import"./partials/variables";
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+
+/*inicio header*/
+header {
+    width: 100%;
+    background-color: #232323;
+    height: auto;
+}
+
+.menu {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px;
+
+    .contenedor__logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .texto__logo {
+
+            color: #fff;
+            font-family: Helvetica, sans-serif;
+            font-size: 3.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 6vh;
+
+        }
+
+    }
+
+}
+
+.navegacion__nav {
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+    .nav__item {
+        margin-left: 3vh;
+        margin-top: 4.5vh;
+    }
+
+    a {
+
+        color: #fff;
+        font-size: large;
+        font-family: "BebasNeue-Regular";
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+
+}
+
+/* menu mobile */
+
+#check__menu,
+.contenedor__nav label {
+
+    display: none;
+}
+
+
+/* pseudoclases navbar */
+
+.nav__item :hover {
+
+    border-top: 3px solid #F18805;
+    padding-top: 10px;
+
+
+}
+
+/* Fin header */
+
+.padre__titulo {
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+    .titulo__tienda {
+
+        font-family: "BebasNeue-Regular";
+        margin-top: 10px;
+        font-size: 2rem;
+    
+    }
+
+
+}
+
+/*contenido de las paginas*/
+
+ /*tienda*/
+
+.container__banner {
+
+    padding: 0%;
+    margin: 0;
+}
+
+.padre__remeras {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10vh;
+
+    .contenedor__img {
+        object-fit: cover;
+        height: 65vh;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px ;
+    }
+
+    .remera {
+
+        font-weight: 600;
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        object-fit: cover;
+        transition: transform 0.2s;
+    }
+    .descripcion {
+
+        font-family: "BebasNeue-Regular";
+        font-size: 1.5rem;
+        font-style: italic;
+        display: flex;
+        background-color: #232323;
+        color: #fff;
+        margin: 0;
+        border: 1px solid #000;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .boton__añadir {
+        width: 100%;
+        font-family: "BebasNeue-Regular";
+        font-size: large;
+    }
+}
+
+.contenedor__img :hover {
+
+    transform: scale(1.5);
+
+}
+.boton__añadir :hover {
+    background-color: #fff;
+}
+
+/* pagina nosotros*/
+
+.padre__nosotros {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "imagenos textonos"
+     
+}
+
+.img__nosotros{
+    grid-area: imagenos;
+    height: 100vh;
+    width: 100vh;
+}
+
+.texto__nosotros {
+
+    grid-area: textonos;
+    font-size: 2rem;
+    font-family: "BebasNeue-Regular";
+
+}
+
+/*pagina diseños*/
+
+.contenedor__banana {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "banana textobanana"
+     
+}
+
+.img__banana{
+    grid-area: banana;
+    height: 80vh;
+    width: 80vh;
+}
+
+.texto__banana {
+
+    grid-area: textobanana;
+    font-size: 2rem;
+    font-family: "BebasNeue-Regular";
+    margin-top: 30vh;
+   
+
+
+}
+
+.contenedor__cajon {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cajon textocajon"
+     
+}
+
+.img__cajon{
+    grid-area: cajon;
+    height: 80vh;
+    width: 80vh;
+}
+
+.texto__cajon {
+
+    grid-area: textocajon;
+    font-size: 2rem;
+    font-family: "BebasNeue-Regular";
+    margin-top: 40vh;
+
+}
+
+.contenedor__ojo {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "textoojo ojo"
+     
+}
+
+.img__ojo{
+    grid-area: ojo;
+    height: 80vh;
+    width: 80vh;
+}
+
+.texto__ojo {
+
+    grid-area: textoojo;
+    font-size: 2rem;
+    font-family: "BebasNeue-Regular";
+    margin-top: 30vh;
+
+}
+
+
+
+/* pagina formulario */
+
+form {
+
+    border-radius: 5px;
+    background-color: #F18805;
+    margin-bottom: 10vh;
+    
+}
+
+
+.btn-primary {
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000000;
+    --bs-btn-border-color: #232323;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #232323;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #232323;
+    --bs-btn-active-border-color: #232323;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #232323;
+    --bs-btn-disabled-border-color: #232323;
+}
+
+/*footer*/
+
+footer {
+
+    background-color: #232323
+
+}
+
+footer a {
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.nav__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "menuf email contacto"
+        "menuf email contacto"
+        "menuf email redes";
+
+        .mf1 {
+
+            margin-left: 30px;
+        }
+
+        .contenedor__nav__footer {
+
+            grid-area: menuf;
+            font-family: "BebasNeue-Regular";
+            color: #fff;
+            margin: 20px;
+        
+        }
+        .contenedor__mailcontacto {
+
+            grid-area: contacto;
+            font-family: "BebasNeue-Regular";
+            color: #fff;
+            margin: 20px;
+            font-size: 1.5rem;
+        }
+        .contenedor__emailoff {
+
+            font-family: "BebasNeue-Regular";
+            color: #fff;
+            margin-top: 20px;
+        
+        }
+
+        .contenedor__redes__footer {
+
+            grid-area: redes;
+            margin-left: 10px;
+        
+        }
+
+}
+
+#input-mail-footer  {
+
+    width: 330px ;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+
+/*queries*/
+
+
+@import"./partials/queries";
+
+
+
