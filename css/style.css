@@ -35,7 +35,7 @@ header {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 6vh;
+  margin-left: 10vh;
 }
 
 .navegacion__nav {
@@ -43,7 +43,7 @@ header {
   flex-direction: row;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .navegacion__nav .nav__item {
   margin-left: 3vh;
@@ -88,6 +88,7 @@ header {
 .container__banner {
   padding: 0%;
   margin: 0;
+  margin-bottom: 20vh;
 }
 
 .padre__remeras {
@@ -99,7 +100,7 @@ header {
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 .padre__remeras .contenedor__img {
   object-fit: cover;
@@ -145,6 +146,9 @@ header {
 
 /* pagina nosotros*/
 .padre__nosotros {
+  background-color: #232323;
+  border: #F18805 3px solid;
+  margin-bottom: 20vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -153,11 +157,13 @@ header {
 
 .img__nosotros {
   grid-area: imagenos;
-  height: 100vh;
+  height: 100%;
   width: 100vh;
 }
 
 .texto__nosotros {
+  color: #fff;
+  padding: 10vh;
   grid-area: textonos;
   font-size: 2rem;
   font-family: "BebasNeue-Regular";
@@ -165,6 +171,10 @@ header {
 
 /*pagina diseños*/
 .contenedor__banana {
+  background-color: #232323;
+  border: #F18805 3px solid;
+  padding: 5vh;
+  margin: 3vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -178,13 +188,18 @@ header {
 }
 
 .texto__banana {
+  color: #fff;
   grid-area: textobanana;
   font-size: 2rem;
   font-family: "BebasNeue-Regular";
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 .contenedor__cajon {
+  background-color: #232323;
+  border: #F18805 3px solid;
+  padding: 5vh;
+  margin: 3vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -198,13 +213,19 @@ header {
 }
 
 .texto__cajon {
+  color: #fff;
   grid-area: textocajon;
   font-size: 2rem;
   font-family: "BebasNeue-Regular";
-  margin-top: 40vh;
+  margin-top: 25vh;
+  padding: 0;
 }
 
 .contenedor__ojo {
+  background-color: #232323;
+  border: #F18805 3px solid;
+  padding: 5vh;
+  margin: 3vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -218,17 +239,21 @@ header {
 }
 
 .texto__ojo {
+  color: #fff;
   grid-area: textoojo;
   font-size: 2rem;
   font-family: "BebasNeue-Regular";
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
 /* pagina formulario */
 form {
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #F18805;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
+}
+form .input__form {
+  padding: 3vh;
 }
 
 .btn-primary {
@@ -259,9 +284,10 @@ footer a {
 
 .nav__footer {
   display: grid;
+  margin-top: 5vh;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "menuf email contacto" "menuf email contacto" "menuf email redes";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "menuf email contacto" "menuf email redes";
 }
 .nav__footer .mf1 {
   margin-left: 30px;

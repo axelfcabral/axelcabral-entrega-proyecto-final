@@ -22,6 +22,8 @@ header {
         display: flex;
         align-items: center;
         height: 100%;
+    
+        
 
         .texto__logo {
 
@@ -31,7 +33,7 @@ header {
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
-            margin-left: 6vh;
+            margin-left: 10vh;
 
         }
 
@@ -45,7 +47,9 @@ header {
     flex-direction: row;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
+    
 
 
     .nav__item {
@@ -113,6 +117,7 @@ header {
 
     padding: 0%;
     margin: 0;
+    margin-bottom: 20vh;
 }
 
 .padre__remeras {
@@ -125,7 +130,7 @@ header {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 
     .contenedor__img {
         object-fit: cover;
@@ -178,23 +183,26 @@ header {
 /* pagina nosotros*/
 
 .padre__nosotros {
-
+    background-color: #232323;
+    border: #F18805 3px solid;
+    margin-bottom: 20vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
     "imagenos textonos"
-     
+    
 }
 
 .img__nosotros{
     grid-area: imagenos;
-    height: 100vh;
+    height: 100%;
     width: 100vh;
 }
 
 .texto__nosotros {
-
+    color: #fff;
+    padding: 10vh;
     grid-area: textonos;
     font-size: 2rem;
     font-family: "BebasNeue-Regular";
@@ -205,6 +213,10 @@ header {
 
 .contenedor__banana {
 
+    background-color: #232323;
+    border:#F18805 3px solid;
+    padding: 5vh;
+    margin: 3vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -220,11 +232,11 @@ header {
 }
 
 .texto__banana {
-
+    color: #fff;
     grid-area: textobanana;
     font-size: 2rem;
     font-family: "BebasNeue-Regular";
-    margin-top: 30vh;
+    margin-top: 25vh;
    
 
 
@@ -232,6 +244,10 @@ header {
 
 .contenedor__cajon {
 
+    background-color: #232323;
+    border:#F18805 3px solid;
+    padding: 5vh;
+    margin: 3vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -247,16 +263,21 @@ header {
 }
 
 .texto__cajon {
-
+    color: #fff;
     grid-area: textocajon;
     font-size: 2rem;
     font-family: "BebasNeue-Regular";
-    margin-top: 40vh;
+    margin-top: 25vh;
+    padding: 0;
 
 }
 
 .contenedor__ojo {
-
+    
+    background-color: #232323;
+    border:#F18805 3px solid;
+    padding: 5vh;
+    margin: 3vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -272,11 +293,11 @@ header {
 }
 
 .texto__ojo {
-
+    color: #fff;
     grid-area: textoojo;
     font-size: 2rem;
     font-family: "BebasNeue-Regular";
-    margin-top: 30vh;
+    margin-top: 20vh;
 
 }
 
@@ -284,12 +305,17 @@ header {
 
 /* pagina formulario */
 
+
 form {
 
-    border-radius: 5px;
+    border-radius:  3px ;
     background-color: #F18805;
-    margin-bottom: 10vh;
-    
+    margin-bottom: 20vh;
+    .input__form{
+
+        padding: 3vh;
+    }
+ 
 }
 
 
@@ -313,7 +339,8 @@ form {
 
 footer {
 
-    background-color: #232323
+    background-color: #232323;
+
 
 }
 
@@ -322,15 +349,16 @@ footer a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
+    
 
 }
 
 .nav__footer {
     display: grid;
+    margin-top: 5vh;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "menuf email contacto"
         "menuf email contacto"
         "menuf email redes";
 
@@ -367,6 +395,7 @@ footer a {
 
             grid-area: redes;
             margin-left: 10px;
+           
         
         }
 
