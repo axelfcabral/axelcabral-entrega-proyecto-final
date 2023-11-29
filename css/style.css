@@ -368,6 +368,8 @@ footer a {
   .contenedor__nav img {
     width: 8vh;
     height: 8vh;
+    margin-top: 20px;
+    margin-left: 100px;
   }
   .contenedor__nav label {
     display: flex;
