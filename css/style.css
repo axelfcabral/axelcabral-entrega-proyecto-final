@@ -48,7 +48,7 @@ header {
 }
 .navegacion__nav .nav__item {
   margin-left: 3vh;
-  margin-top: 4.5vh;
+  margin-top: 3vh;
 }
 .navegacion__nav a {
   color: #fff;
@@ -340,10 +340,11 @@ footer a {
     justify-content: flex-end;
     height: 100%;
   }
-  .contenedor__nav box-icon {
-    margin-left: 60%;
-    margin-top: 2.3vh;
-    font-size: 1.3rem;
+  .contenedor__nav img {
+    width: 15vh;
+    height: 15vh;
+    margin-top: 3.3vh;
+    margin-left: 25vh;
   }
   .contenedor__nav label {
     display: flex;

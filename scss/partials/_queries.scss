@@ -5,12 +5,15 @@
         justify-content: flex-end;
         height: 100%;
 
-        box-icon {
-            margin-left: 60%;
-            margin-top: 2.3vh;
-            font-size: 1.3rem;
+        img {
+            width: $ancho-vh*15;
+            height: $altura-vh*15;
+            margin-top: $altura-vh*3.3;
+            margin-left: $ancho-vh*25 ;
+            
         }
 
+    
     }
 
     .contenedor__nav label {
