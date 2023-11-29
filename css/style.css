@@ -353,10 +353,6 @@ footer a {
     justify-content: center;
     height: 100%;
   }
-  .contenedor__nav img {
-    width: 8vh;
-    height: 8vh;
-  }
   .contenedor__nav label {
     display: flex;
   }
