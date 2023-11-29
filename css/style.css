@@ -32,7 +32,7 @@ header {
 .menu .contenedor__logo .texto__logo {
   color: #fff;
   font-family: Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -47,14 +47,14 @@ header {
   justify-content: flex-start;
 }
 .navegacion__nav .nav__item {
-  margin-left: 3vh;
+  margin-left: 1vh;
   margin-top: 3vh;
 }
 .navegacion__nav a {
   color: #fff;
   font-size: large;
   font-family: "BebasNeue-Regular";
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-decoration: none;
 }
 
@@ -341,10 +341,9 @@ footer a {
     height: 100%;
   }
   .contenedor__nav img {
-    width: 15vh;
-    height: 15vh;
-    margin-top: 3.3vh;
-    margin-left: 25vh;
+    width: 8vh;
+    height: 8vh;
+    margin-left: 5vh;
   }
   .contenedor__nav label {
     display: flex;
