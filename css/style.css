@@ -336,14 +336,26 @@ footer a {
 /*queries*/
 /* breackpoint 768px*/
 @media (max-width: 768px) {
+  .contenedor__logo {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .contenedor__logo .texto__logo {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
   .contenedor__nav {
-    justify-content: flex-end;
+    justify-content: center;
     height: 100%;
   }
   .contenedor__nav img {
     width: 8vh;
     height: 8vh;
-    margin-left: 5vh;
   }
   .contenedor__nav label {
     display: flex;
