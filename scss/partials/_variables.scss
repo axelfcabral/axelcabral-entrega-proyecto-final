@@ -1,7 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(../fuentes/BebasNeue-Regular.ttf);
 }
+
+
+/*variables*/
+
+$fuente :"BebasNeue-Regular";
+$porciento: 100% ;
+$fuente-rem: 1rem ;
+$altura-vh:1vh;
+$ancho-vh:1vh;
+$color-naranja:#f18705;
+$color-negro:#232323;
+$color-blanco:#fff;

@@ -503,7 +503,7 @@ footer a {
     }
 
 
-    /*comienzo nav*/
+    /*comienzo nav footer*/
     .nav__footer {
         display: grid;
         grid-template-columns: 1, 1fr;

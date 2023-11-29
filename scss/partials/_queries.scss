@@ -1,0 +1,294 @@
+/* breackpoint 768px*/
+@media (max-width:768px) {
+
+    .contenedor__nav {
+        justify-content: flex-end;
+        height: 100%;
+
+        box-icon {
+            margin-left: 60%;
+            margin-top: 2.3vh;
+            font-size: 1.3rem;
+        }
+
+    }
+
+    .contenedor__nav label {
+        display: flex;
+    }
+
+    .navegacion__nav {
+
+        display: none;
+    }
+
+    #check__menu:checked~.navegacion__nav {
+
+        background-color: #f18705;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    /*titulo contacto*/
+    .contenedor__titulo2 {
+
+        margin-top: 50px;
+    }
+
+    /* pagina nosotros*/
+
+    .padre__nosotros {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .img__nosotros {
+            width: 100%;
+            padding: 10vh;
+        }
+
+        .texto__nosotros {
+            font-size: 1.5rem;
+
+
+        }
+
+    }
+
+    /*comienzo diseños*/
+
+    .contenedor__banana {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+
+
+        .img__banana {
+
+            padding: 10vh;
+            height: 75vh;
+            width: 70vh;
+        }
+
+        .texto__banana {
+            font-size: 1.5rem;
+            margin-top: 15vh;
+            padding: 15px;
+
+        }
+
+    }
+
+    .contenedor__ojo {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+        margin-top: $altura-vh*5;
+
+
+
+        .img__ojo {
+
+            padding: 10vh;
+            height: 75vh;
+            width: 70vh;
+        }
+
+        .texto__ojo {
+            font-size: 1.5rem;
+            margin-top: 10vh;
+            padding: 15px;
+
+
+
+        }
+
+    }
+
+    .contenedor__cajon {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+        margin-top: $altura-vh*5;
+
+
+
+        .img__cajon {
+
+            padding: 10vh;
+            height: 80vh;
+            width: 80vh;
+        }
+
+        .texto__cajon {
+            font-size: 1.5rem;
+            margin-top: 10vh;
+            padding: 15px;
+
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+    /*comienzo nav footer*/
+
+    .contenedor__nav__footer {
+
+        display: none;
+    }
+
+    .nav__footer {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "email"
+            "contacto"
+            "redes";
+
+    }
+
+    .contenedor__mailcontacto {
+
+        grid-area: contacto;
+        font-family: "BebasNeue-Regular";
+        color: $color-blanco;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .contenedor__emailoff {
+
+        font-family: "BebasNeue-Regular";
+        color: $color-blanco;
+        margin: 20px;
+        width: 450px;
+
+    }
+
+}
+
+
+/* breackpoint 576px*/
+@media (max-width:576px) {
+
+    .contenedor__emailoff {
+
+        font-family: "BebasNeue-Regular";
+        color: $color-blanco;
+        margin: 20px;
+        width: 300px;
+
+    }
+
+    #input-mail-footer {
+
+        width: 300px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid $color-blanco;
+        border-radius: 5px;
+        background-color: $color-blanco;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .contenedor__banana {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+
+
+        .img__banana {
+
+            padding: 10vh;
+            height: 50vh;
+            width: 50vh;;
+        }
+
+        .texto__banana {
+            font-size: 1.1rem;
+            margin-top: 10vh;
+            padding: 15px;
+
+        }
+
+    }
+
+    .contenedor__ojo {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+        margin-top: $altura-vh*5;
+
+
+
+        .img__ojo {
+
+            padding: 10vh;
+            height: 50vh;
+            width: 50vh;
+        }
+
+        .texto__ojo {
+            font-size: 1.1rem;
+            margin-top: 10vh;
+            padding: 15px;
+
+
+
+        }
+
+    }
+
+    .contenedor__cajon {
+        display: flex;
+        flex-direction: row;
+        width: $porciento;
+        margin: 0;
+        margin-top: $altura-vh*5;
+
+
+
+        .img__cajon {
+
+            padding: 10vh;
+            height: 50vh;
+            width: 50vh;;
+        }
+
+        .texto__cajon {
+            font-size: 1.1rem;
+            margin-top: 10vh;
+            padding: 15px;
+
+
+        }
+
+
+
+
+
+    }
+
+}

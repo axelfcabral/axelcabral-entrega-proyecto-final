@@ -11,6 +11,7 @@
   font-family: "BebasNeue-Regular";
   src: url(../fuentes/BebasNeue-Regular.ttf);
 }
+/*variables*/
 /*inicio header*/
 header {
   width: 100%;
@@ -65,7 +66,7 @@ header {
 
 /* pseudoclases navbar */
 .nav__item :hover {
-  border-top: 3px solid #F18805;
+  border-top: 3px solid #f18705;
   padding-top: 10px;
 }
 
@@ -84,11 +85,17 @@ header {
 }
 
 /*contenido de las paginas*/
-/*tienda*/
 .container__banner {
   padding: 0%;
   margin: 0;
   margin-bottom: 20vh;
+}
+
+/*tienda*/
+.titulo__tienda {
+  font-family: "BebasNeue-Regular";
+  margin-top: 10px;
+  font-size: 2rem;
 }
 
 .padre__remeras {
@@ -137,7 +144,7 @@ header {
 }
 
 .contenedor__img :hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .boton__añadir :hover {
@@ -147,7 +154,7 @@ header {
 /* pagina nosotros*/
 .padre__nosotros {
   background-color: #232323;
-  border: #F18805 3px solid;
+  border: #f18705 3px solid;
   margin-bottom: 20vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -172,7 +179,7 @@ header {
 /*pagina diseños*/
 .contenedor__banana {
   background-color: #232323;
-  border: #F18805 3px solid;
+  border: #f18705 3px solid;
   padding: 5vh;
   margin: 3vh;
   display: grid;
@@ -197,7 +204,7 @@ header {
 
 .contenedor__cajon {
   background-color: #232323;
-  border: #F18805 3px solid;
+  border: #f18705 3px solid;
   padding: 5vh;
   margin: 3vh;
   display: grid;
@@ -223,7 +230,7 @@ header {
 
 .contenedor__ojo {
   background-color: #232323;
-  border: #F18805 3px solid;
+  border: #f18705 3px solid;
   padding: 5vh;
   margin: 3vh;
   display: grid;
@@ -249,7 +256,7 @@ header {
 /* pagina formulario */
 form {
   border-radius: 3px;
-  background-color: #F18805;
+  background-color: #f18705;
   margin-bottom: 20vh;
 }
 form .input__form {
@@ -327,5 +334,195 @@ footer a {
 }
 
 /*queries*/
+/* breackpoint 768px*/
+@media (max-width: 768px) {
+  .contenedor__nav {
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .contenedor__nav box-icon {
+    margin-left: 60%;
+    margin-top: 2.3vh;
+    font-size: 1.3rem;
+  }
+  .contenedor__nav label {
+    display: flex;
+  }
+  .navegacion__nav {
+    display: none;
+  }
+  #check__menu:checked ~ .navegacion__nav {
+    background-color: #f18705;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  /*titulo contacto*/
+  .contenedor__titulo2 {
+    margin-top: 50px;
+  }
+  /* pagina nosotros*/
+  .padre__nosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .padre__nosotros .img__nosotros {
+    width: 100%;
+    padding: 10vh;
+  }
+  .padre__nosotros .texto__nosotros {
+    font-size: 1.5rem;
+  }
+  /*comienzo diseños*/
+  .contenedor__banana {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+  .contenedor__banana .img__banana {
+    padding: 10vh;
+    height: 75vh;
+    width: 70vh;
+  }
+  .contenedor__banana .texto__banana {
+    font-size: 1.5rem;
+    margin-top: 15vh;
+    padding: 15px;
+  }
+  .contenedor__ojo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .contenedor__ojo .img__ojo {
+    padding: 10vh;
+    height: 75vh;
+    width: 70vh;
+  }
+  .contenedor__ojo .texto__ojo {
+    font-size: 1.5rem;
+    margin-top: 10vh;
+    padding: 15px;
+  }
+  .contenedor__cajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .contenedor__cajon .img__cajon {
+    padding: 10vh;
+    height: 80vh;
+    width: 80vh;
+  }
+  .contenedor__cajon .texto__cajon {
+    font-size: 1.5rem;
+    margin-top: 10vh;
+    padding: 15px;
+  }
+  /*comienzo nav footer*/
+  .contenedor__nav__footer {
+    display: none;
+  }
+  .nav__footer {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "email" "contacto" "redes";
+  }
+  .contenedor__mailcontacto {
+    grid-area: contacto;
+    font-family: "BebasNeue-Regular";
+    color: #fff;
+    margin: 20px;
+    width: 100%;
+  }
+  .contenedor__emailoff {
+    font-family: "BebasNeue-Regular";
+    color: #fff;
+    margin: 20px;
+    width: 450px;
+  }
+}
+/* breackpoint 576px*/
+@media (max-width: 576px) {
+  .contenedor__emailoff {
+    font-family: "BebasNeue-Regular";
+    color: #fff;
+    margin: 20px;
+    width: 300px;
+  }
+  #input-mail-footer {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+  }
+  .contenedor__banana {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+  .contenedor__banana .img__banana {
+    padding: 10vh;
+    height: 50vh;
+    width: 50vh;
+  }
+  .contenedor__banana .texto__banana {
+    font-size: 1.1rem;
+    margin-top: 10vh;
+    padding: 15px;
+  }
+  .contenedor__ojo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .contenedor__ojo .img__ojo {
+    padding: 10vh;
+    height: 50vh;
+    width: 50vh;
+  }
+  .contenedor__ojo .texto__ojo {
+    font-size: 1.1rem;
+    margin-top: 10vh;
+    padding: 15px;
+  }
+  .contenedor__cajon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .contenedor__cajon .img__cajon {
+    padding: 10vh;
+    height: 50vh;
+    width: 50vh;
+  }
+  .contenedor__cajon .texto__cajon {
+    font-size: 1.1rem;
+    margin-top: 10vh;
+    padding: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
