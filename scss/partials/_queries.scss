@@ -1,5 +1,5 @@
 /* breackpoint 768px*/
-@media (max-width:768px) {
+@media (max-width:780px) {
 
     .contenedor__logo {
         display: flex;
@@ -22,6 +22,12 @@
     .contenedor__nav {
         justify-content:center;
         height: 100%;
+
+        img {
+            width: $ancho-vh*8;
+            height: $altura-vh*8;
+            
+        }
 
     
     }

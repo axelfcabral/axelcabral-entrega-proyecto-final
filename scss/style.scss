@@ -198,24 +198,43 @@ header {
     border: $color-naranja 3px solid;
     margin-bottom: 20vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-    "imagenos textonos"
+    "imagenos"
+    "textonos"
+    ;
     
 }
 
-.img__nosotros{
-    grid-area: imagenos;
-    height: $porciento;
-    width: 100vh;
+.padre__nosotros {
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .img__nosotros {
+        width: 100%;
+        height: 110vh;
+        padding: 5vh;
+    }
+
+    .texto__nosotros {
+        color: $color-blanco;
+        padding: 10vh;
+        grid-area: textonos;
+        font-size: 1.5rem;
+        font-family: $fuente;
+
+    }
+
 }
 
 .texto__nosotros {
     color: $color-blanco;
     padding: 10vh;
     grid-area: textonos;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: $fuente;
 
 }

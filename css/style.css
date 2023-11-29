@@ -157,22 +157,34 @@ header {
   border: #f18705 3px solid;
   margin-bottom: 20vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "imagenos textonos";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "imagenos" "textonos";
 }
 
-.img__nosotros {
-  grid-area: imagenos;
-  height: 100%;
-  width: 100vh;
+.padre__nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.padre__nosotros .img__nosotros {
+  width: 100%;
+  height: 110vh;
+  padding: 5vh;
+}
+.padre__nosotros .texto__nosotros {
+  color: #fff;
+  padding: 10vh;
+  grid-area: textonos;
+  font-size: 1.5rem;
+  font-family: "BebasNeue-Regular";
 }
 
 .texto__nosotros {
   color: #fff;
   padding: 10vh;
   grid-area: textonos;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "BebasNeue-Regular";
 }
 
@@ -335,7 +347,7 @@ footer a {
 
 /*queries*/
 /* breackpoint 768px*/
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .contenedor__logo {
     display: flex;
     align-items: flex-start;
@@ -352,6 +364,10 @@ footer a {
   .contenedor__nav {
     justify-content: center;
     height: 100%;
+  }
+  .contenedor__nav img {
+    width: 8vh;
+    height: 8vh;
   }
   .contenedor__nav label {
     display: flex;
