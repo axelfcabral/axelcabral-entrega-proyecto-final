@@ -252,7 +252,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas:
     "banana textobanana"
-     
+
 }
 
 .img__banana{
@@ -274,61 +274,41 @@ header {
 
 .contenedor__cajon {
 
-    background-color: $color-negro;
-    border:$color-naranja 3px solid;
-    padding: 5vh;
-    margin: 3vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    @extend .contenedor__banana;
     grid-template-areas:
     "cajon textocajon"
-     
+    
+
 }
 
 .img__cajon{
-    grid-area: cajon;
-    height: 80vh;
-    width: 80vh;
+  
+    @extend .img__banana;
 }
 
 .texto__cajon {
-    color: $color-blanco;
+
+    @extend .texto__banana;
     grid-area: textocajon;
-    font-size: 2rem;
-    font-family: $fuente;
-    margin-top: 25vh;
-    padding: 0;
 
 }
 
 .contenedor__ojo {
     
-    background-color: $color-negro;
-    border:$color-naranja 3px solid;
-    padding: 5vh;
-    margin: 3vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    @extend .contenedor__banana;
     grid-template-areas:
-    "textoojo ojo"
-     
+    "textoojo ojo";
+
 }
 
 .img__ojo{
-    grid-area: ojo;
-    height: 80vh;
-    width: 80vh;
+    @extend .img__banana;
 }
 
 .texto__ojo {
-    color: $color-blanco;
+    @extend .texto__banana;
     grid-area: textoojo;
-    font-size: 2rem;
-    font-family: $fuente;
-    margin-top: 20vh;
-
+   
 }
 
 
@@ -336,17 +316,31 @@ header {
 /* pagina formulario */
 
 
+
 form {
 
     border-radius:  3px ;
     background-color: $color-naranja;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
     .input__form{
 
-        padding: 3vh;
+        padding: 2vh;
+        
+        label{
+            font-family: $fuente;
+            font-size: $fuente-rem*1.5;
+        }
+        input {
+            font-family: $fuente;
+        }
+        textarea {
+            font-family: $fuente;
+        }
     }
  
 }
+
+
 
 
 .btn-primary {
