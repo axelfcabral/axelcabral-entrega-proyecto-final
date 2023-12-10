@@ -240,13 +240,21 @@ header {
 }
 
 /*pagina diseños*/
+.contenedor__diseños {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .contenedor__banana {
 
     background-color: $color-negro;
     border:$color-naranja 3px solid;
-    padding: 5vh;
-    margin: 3vh;
+    width: $porciento - 5;
+    margin-bottom: $altura-vh;
+    overflow: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -257,8 +265,8 @@ header {
 
 .img__banana{
     grid-area: banana;
-    height: 80vh;
-    width: 80vh;
+    height: 45vh;
+    width: 45vh;
 }
 
 .texto__banana {
@@ -266,9 +274,7 @@ header {
     grid-area: textobanana;
     font-size: 2rem;
     font-family: $fuente;
-    margin-top: 25vh;
-   
-
+    margin-top: $altura-vh *15;
 
 }
 

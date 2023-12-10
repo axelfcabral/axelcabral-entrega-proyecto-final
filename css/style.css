@@ -189,11 +189,20 @@ header {
 }
 
 /*pagina diseños*/
+.contenedor__diseños {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contenedor__banana, .contenedor__ojo, .contenedor__cajon {
   background-color: #232323;
   border: #f18705 3px solid;
-  padding: 5vh;
-  margin: 3vh;
+  width: 95%;
+  margin-bottom: 1vh;
+  overflow: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -202,8 +211,8 @@ header {
 
 .img__banana, .img__ojo, .img__cajon {
   grid-area: banana;
-  height: 80vh;
-  width: 80vh;
+  height: 45vh;
+  width: 45vh;
 }
 
 .texto__banana, .texto__ojo, .texto__cajon {
@@ -211,7 +220,7 @@ header {
   grid-area: textobanana;
   font-size: 2rem;
   font-family: "BebasNeue-Regular";
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 
 .contenedor__cajon {
@@ -384,53 +393,54 @@ footer a {
   /*comienzo diseños*/
   .contenedor__banana, .contenedor__cajon, .contenedor__ojo {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 60%;
+    overflow: auto;
+    text-align: center;
   }
   .contenedor__banana .img__banana, .contenedor__cajon .img__banana, .contenedor__ojo .img__banana, .contenedor__banana .img__cajon, .contenedor__cajon .img__cajon, .contenedor__ojo .img__cajon, .contenedor__banana .img__ojo, .contenedor__cajon .img__ojo, .contenedor__ojo .img__ojo {
-    padding: 10vh;
-    height: 75vh;
-    width: 70vh;
+    height: 20vh;
+    width: 20vh;
+    margin: 0;
   }
   .contenedor__banana .texto__banana, .contenedor__cajon .texto__banana, .contenedor__ojo .texto__banana, .contenedor__banana .texto__cajon, .contenedor__cajon .texto__cajon, .contenedor__ojo .texto__cajon, .contenedor__banana .texto__ojo, .contenedor__cajon .texto__ojo, .contenedor__ojo .texto__ojo {
     font-size: 1.5rem;
-    margin-top: 15vh;
-    padding: 15px;
+    margin-top: 0;
   }
   .contenedor__ojo {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-    margin-top: 5vh;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 60%;
+    overflow: auto;
+    text-align: center;
   }
   .contenedor__ojo .img__ojo {
-    padding: 10vh;
-    height: 75vh;
-    width: 70vh;
+    height: 20vh;
+    width: 20vh;
+    margin: 0;
   }
   .contenedor__ojo .texto__ojo {
     font-size: 1.5rem;
-    margin-top: 10vh;
-    padding: 15px;
+    margin-top: 0;
   }
   .contenedor__cajon {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-    margin-top: 5vh;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 60%;
+    overflow: auto;
+    text-align: center;
   }
   .contenedor__cajon .img__cajon {
-    padding: 10vh;
-    height: 80vh;
-    width: 80vh;
+    height: 20vh;
+    width: 20vh;
+    margin: 0;
   }
   .contenedor__cajon .texto__cajon {
     font-size: 1.5rem;
-    margin-top: 10vh;
-    padding: 15px;
+    margin-top: 0;
   }
   /*comienzo nav footer*/
   .contenedor__nav__footer {
@@ -473,56 +483,6 @@ footer a {
     background-color: #fff;
     font-size: 16px;
     color: #333;
-  }
-  .contenedor__banana, .contenedor__cajon, .contenedor__ojo {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-  }
-  .contenedor__banana .img__banana, .contenedor__cajon .img__banana, .contenedor__ojo .img__banana, .contenedor__banana .img__cajon, .contenedor__cajon .img__cajon, .contenedor__ojo .img__cajon, .contenedor__banana .img__ojo, .contenedor__cajon .img__ojo, .contenedor__ojo .img__ojo {
-    padding: 10vh;
-    height: 50vh;
-    width: 50vh;
-  }
-  .contenedor__banana .texto__banana, .contenedor__cajon .texto__banana, .contenedor__ojo .texto__banana, .contenedor__banana .texto__cajon, .contenedor__cajon .texto__cajon, .contenedor__ojo .texto__cajon, .contenedor__banana .texto__ojo, .contenedor__cajon .texto__ojo, .contenedor__ojo .texto__ojo {
-    font-size: 1.1rem;
-    margin-top: 10vh;
-    padding: 15px;
-  }
-  .contenedor__ojo {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-    margin-top: 5vh;
-  }
-  .contenedor__ojo .img__ojo {
-    padding: 10vh;
-    height: 50vh;
-    width: 50vh;
-  }
-  .contenedor__ojo .texto__ojo {
-    font-size: 1.1rem;
-    margin-top: 10vh;
-    padding: 15px;
-  }
-  .contenedor__cajon {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-    margin-top: 5vh;
-  }
-  .contenedor__cajon .img__cajon {
-    padding: 10vh;
-    height: 50vh;
-    width: 50vh;
-  }
-  .contenedor__cajon .texto__cajon {
-    font-size: 1.1rem;
-    margin-top: 10vh;
-    padding: 15px;
   }
 }
 

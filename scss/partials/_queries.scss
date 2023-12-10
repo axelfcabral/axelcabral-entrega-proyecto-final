@@ -88,77 +88,73 @@
 
     .contenedor__banana {
         display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-
+        flex-direction: column;
+        margin-bottom: $pixel;
+        width: $porciento - 40;
+        overflow: auto;
+        text-align: center;
+        
 
         .img__banana {
-
-            padding: 10vh;
-            height: 75vh;
-            width: 70vh;
+            height: 20vh;
+            width: 20vh;
+            margin: 0;
+            
         }
 
         .texto__banana {
             font-size: 1.5rem;
-            margin-top: 15vh;
-            padding: 15px;
-
+            margin-top: 0;
+           
         }
 
     }
 
     .contenedor__ojo {
         display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-        margin-top: $altura-vh*5;
+        flex-direction: column;
+        margin-bottom: $pixel;
+        width: $porciento - 40;
+        overflow: auto;
+        text-align: center;
 
 
 
         .img__ojo {
-
-            padding: 10vh;
-            height: 75vh;
-            width: 70vh;
+            height: 20vh;
+            width: 20vh;
+            margin: 0;
         }
 
         .texto__ojo {
             font-size: 1.5rem;
-            margin-top: 10vh;
-            padding: 15px;
-
-
+            margin-top: 0;
 
         }
 
     }
 
     .contenedor__cajon {
+        
         display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-        margin-top: $altura-vh*5;
+        flex-direction: column;
+        margin-bottom: $pixel;
+        width: $porciento - 40;
+        overflow: auto;
+        text-align: center;
 
 
 
         .img__cajon {
 
-            padding: 10vh;
-            height: 80vh;
-            width: 80vh;
+            height: 20vh;
+            width: 20vh;
+            margin: 0;
         }
 
         .texto__cajon {
             font-size: 1.5rem;
-            margin-top: 10vh;
-            padding: 15px;
-
-
-
+            margin-top: 0;
         }
 
 
@@ -232,84 +228,5 @@
         color: #333;
     }
 
-    .contenedor__banana {
-        display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-
-
-        .img__banana {
-
-            padding: 10vh;
-            height: 50vh;
-            width: 50vh;;
-        }
-
-        .texto__banana {
-            font-size: 1.1rem;
-            margin-top: 10vh;
-            padding: 15px;
-
-        }
-
-    }
-
-    .contenedor__ojo {
-        display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-        margin-top: $altura-vh*5;
-
-
-
-        .img__ojo {
-
-            padding: 10vh;
-            height: 50vh;
-            width: 50vh;
-        }
-
-        .texto__ojo {
-            font-size: 1.1rem;
-            margin-top: 10vh;
-            padding: 15px;
-
-
-
-        }
-
-    }
-
-    .contenedor__cajon {
-        display: flex;
-        flex-direction: row;
-        width: $porciento;
-        margin: 0;
-        margin-top: $altura-vh*5;
-
-
-
-        .img__cajon {
-
-            padding: 10vh;
-            height: 50vh;
-            width: 50vh;;
-        }
-
-        .texto__cajon {
-            font-size: 1.1rem;
-            margin-top: 10vh;
-            padding: 15px;
-
-
-        }
-
-
-
-
-
-    }
 
 }
