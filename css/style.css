@@ -103,15 +103,18 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  align-items: start;
+  align-items: center;
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
-  margin-bottom: 20vh;
+}
+.padre__remeras .contenedor__card {
+  margin: 0.5vh;
+  width: 50vh;
 }
 .padre__remeras .contenedor__img {
   object-fit: cover;
-  height: 65vh;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
   border-radius: 5px;
@@ -330,12 +333,38 @@ footer a {
 }
 
 /*queries*/
+/* breackpoint 1361px*/
+@media (max-width: 1361px) {
+  .padre__remeras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  .padre__remeras .contenedor__card {
+    margin: 0.5vh;
+    width: 40vh;
+  }
+  .padre__remeras .contenedor__img {
+    object-fit: cover;
+    height: 45vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
 /* breackpoint 768px*/
 @media (max-width: 780px) {
   .contenedor__logo {
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: flex-start;
     height: 100%;
+    overflow: auto;
   }
   .contenedor__logo .texto__logo {
     color: #fff;
@@ -346,14 +375,12 @@ footer a {
     text-transform: uppercase;
   }
   .contenedor__nav {
+    margin: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
     height: 100%;
-  }
-  .contenedor__nav img {
-    width: 8vh;
-    height: 8vh;
-    margin-top: 20px;
-    margin-left: 100px;
+    overflow: auto;
   }
   .contenedor__nav label {
     display: flex;
@@ -376,6 +403,35 @@ footer a {
   /*titulo contacto*/
   .contenedor__titulo2 {
     margin-top: 50px;
+  }
+  /* pagina shop */
+  .padre__remeras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  .padre__remeras .contenedor__card {
+    margin: 1vh;
+    width: 35vh;
+  }
+  .padre__remeras .contenedor__img {
+    object-fit: cover;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .padre__remeras .descripcion {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .padre__remeras .descripcion .boton__añadir {
+    font-size: 1rem;
   }
   /* pagina nosotros*/
   .padre__nosotros {
@@ -467,7 +523,30 @@ footer a {
   }
 }
 /* breackpoint 576px*/
-@media (max-width: 576px) {
+@media (max-width: 655px) {
+  /*pagina shop*/
+  .padre__remeras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  .padre__remeras .contenedor__card {
+    margin: 1vh;
+    width: 25vh;
+  }
+  .padre__remeras .contenedor__img {
+    object-fit: cover;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  /*retoques footer*/
   .contenedor__emailoff {
     font-family: "BebasNeue-Regular";
     color: #fff;

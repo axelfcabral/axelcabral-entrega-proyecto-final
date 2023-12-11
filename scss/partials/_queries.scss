@@ -1,10 +1,46 @@
+/* breackpoint 1361px*/
+@media (max-width:1361px) {
+
+    .padre__remeras {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: $porciento;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    
+        .contenedor__card {
+    
+            margin: $ancho-vh /2;
+            width: $ancho-vh *40;
+        
+        }
+    
+        .contenedor__img {
+            object-fit: cover;
+            height: 45vh;
+            width: $porciento;
+            overflow: hidden;
+            border-radius: 5px ;
+        }
+
+    }
+}
+
+
+
 /* breackpoint 768px*/
 @media (max-width:780px) {
 
     .contenedor__logo {
+        margin: 0;
+        padding: 0;
         display: flex;
-        align-items: flex-start;
-        height: 100%;
+        height: $porciento;
+        overflow: auto;
 
         .texto__logo {
 
@@ -20,18 +56,12 @@
     }
 
     .contenedor__nav {
-        justify-content:center;
-        height: 100%;
-
-        img {
-            width: $ancho-vh*8;
-            height: $altura-vh*8;
-            margin-top: 20px;
-            margin-left: 100px;
- 
-        }
-
-    
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $porciento;
+        overflow: auto;
     }
 
     .contenedor__nav label {
@@ -62,6 +92,48 @@
 
         margin-top: 50px;
     }
+
+    /* pagina shop */
+
+    .padre__remeras {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: $porciento;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    
+        .contenedor__card {
+    
+            margin: $ancho-vh;
+            width: $ancho-vh *35;
+        
+        }
+    
+        .contenedor__img {
+            object-fit: cover;
+            height: 40vh;
+            width: $porciento;
+            overflow: hidden;
+            border-radius: 3px ;
+        }
+        .descripcion {
+            
+            font-size: 1rem;
+            margin: 0;
+            .boton__añadir{
+                font-size: 1rem;
+            }
+        
+         
+        }
+       
+    }
+
+
 
     /* pagina nosotros*/
 
@@ -201,12 +273,44 @@
 
     }
 
+
+
 }
 
 
 /* breackpoint 576px*/
-@media (max-width:576px) {
+@media (max-width:655px) {
+    /*pagina shop*/
+    .padre__remeras {
 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: $porciento;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    
+        .contenedor__card {
+    
+            margin: $ancho-vh;
+            width: $ancho-vh *25;
+        
+        }
+    
+        .contenedor__img {
+            object-fit: cover;
+            height: 30vh;
+            width: $porciento;
+            overflow: hidden;
+            border-radius: 3px ;
+        }
+
+       
+    }
+
+    /*retoques footer*/
     .contenedor__emailoff {
 
         font-family: "BebasNeue-Regular";

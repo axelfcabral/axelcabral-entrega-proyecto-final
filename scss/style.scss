@@ -129,21 +129,30 @@ header {
 
 }
 
+
+
+
 .padre__remeras {
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: $porciento;
-    align-items: start;
+    align-items: center;
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    margin-bottom: 20vh;
+
+    .contenedor__card {
+
+        margin: $ancho-vh /2;
+        width: $ancho-vh *50;
+    
+    }
 
     .contenedor__img {
         object-fit: cover;
-        height: 65vh;
+        height: 60vh;
         width: $porciento;
         overflow: hidden;
         border-radius: 5px ;
