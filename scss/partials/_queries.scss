@@ -35,22 +35,31 @@
 /* breackpoint 768px*/
 @media (max-width:780px) {
 
-    .contenedor__logo {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        height: $porciento;
-        overflow: auto;
-
-        .texto__logo {
-
-            color: #fff;
-            font-family: Helvetica, sans-serif;
-            font-size: 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
+    /*barra de navegacion*/
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px;
+    
+        .contenedor__logo {
+            display: flex;
+            align-items: center;
+            height: $porciento;
+        
             
+    
+            .texto__logo {
+    
+                color: $color-blanco;
+                font-family: Helvetica, sans-serif;
+                font-size: 1.5rem;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-left: 10vh;
+    
+            }
+    
         }
     
     }
@@ -88,10 +97,29 @@
     }
 
     /*titulo contacto*/
-    .contenedor__titulo2 {
 
-        margin-top: 50px;
+    form {
+
+        border-radius:  3px ;
+        background-color: $color-naranja;
+        margin-bottom: 10vh;
+        
+        .padre__titulo{
+
+            .titulo__tienda{
+
+                font-size: 1.5rem;
+            }
+        }
+
+        .input__form{
+    
+            padding: 3vh;
+            
+        }
+     
     }
+    
 
     /* pagina shop */
 
@@ -331,6 +359,42 @@
         font-size: 16px;
         color: #333;
     }
+
+
+}
+
+/* breackpoint 576px*/
+@media (max-width:480px) {
+
+        /*pagina shop*/
+        .padre__remeras {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: $porciento;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+        
+            .contenedor__card {
+        
+                margin: $ancho-vh;
+                width: $ancho-vh *17;
+            
+            }
+        
+            .contenedor__img {
+                object-fit: cover;
+                height: 17vh;
+                width: $porciento;
+                overflow: hidden;
+                border-radius: 3px ;
+            }
+    
+           
+        }
 
 
 }

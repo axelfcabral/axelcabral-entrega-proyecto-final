@@ -359,20 +359,25 @@ footer a {
 }
 /* breackpoint 768px*/
 @media (max-width: 780px) {
-  .contenedor__logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100%;
-    overflow: auto;
+  /*barra de navegacion*/
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px;
   }
-  .contenedor__logo .texto__logo {
+  .menu .contenedor__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .menu .contenedor__logo .texto__logo {
     color: #fff;
     font-family: Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    margin-left: 10vh;
   }
   .contenedor__nav {
     margin: 0;
@@ -401,8 +406,16 @@ footer a {
     align-items: start;
   }
   /*titulo contacto*/
-  .contenedor__titulo2 {
-    margin-top: 50px;
+  form {
+    border-radius: 3px;
+    background-color: #f18705;
+    margin-bottom: 10vh;
+  }
+  form .padre__titulo .titulo__tienda {
+    font-size: 1.5rem;
+  }
+  form .input__form {
+    padding: 3vh;
   }
   /* pagina shop */
   .padre__remeras {
@@ -562,6 +575,31 @@ footer a {
     background-color: #fff;
     font-size: 16px;
     color: #333;
+  }
+}
+/* breackpoint 576px*/
+@media (max-width: 480px) {
+  /*pagina shop*/
+  .padre__remeras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  .padre__remeras .contenedor__card {
+    margin: 1vh;
+    width: 17vh;
+  }
+  .padre__remeras .contenedor__img {
+    object-fit: cover;
+    height: 17vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
   }
 }
 
