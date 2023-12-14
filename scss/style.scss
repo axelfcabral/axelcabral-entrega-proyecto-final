@@ -14,19 +14,19 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px;
+    
 
     .contenedor__logo {
         display: flex;
         align-items: center;
         height: $porciento;
+       
     
         
 
         .texto__logo {
 
-            color: $color-blanco;
-            font-family: Helvetica, sans-serif;
-            font-size: 3rem;
+            @include basico($fuente2,$color-blanco ,3rem );
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
@@ -46,9 +46,6 @@ header {
     align-items: center;
     justify-content: flex-start;
     
-    
-
-
     .nav__item {
         margin-left: 1vh;
         margin-top: $altura-vh*3;
@@ -56,10 +53,7 @@ header {
 
     a {
 
-        color: $color-blanco;
-        font-size: large;
-        font-family: $fuente;
-        font-size: 1.7rem;
+        @include basico($fuente,$color-blanco ,2rem );
         text-decoration: none;
     }
 
@@ -100,9 +94,9 @@ header {
 
     .titulo__tienda {
 
-        font-family: $fuente ;
+        
+        @include basico($fuente,$color-negro ,2rem );
         margin-top: 10px;
-        font-size: 2rem;
     
     }
 
@@ -121,13 +115,6 @@ header {
 
 /*tienda*/
 
-.titulo__tienda {
-
-    font-family: $fuente ;
-    margin-top: 10px;
-    font-size: 2rem;
-
-}
 
 
 
@@ -168,12 +155,10 @@ header {
     }
     .descripcion {
 
-        font-family: $fuente;
-        font-size: 1.5rem;
+        @include basico($fuente,$color-blanco ,1.5rem );
         font-style: italic;
         display: flex;
         background-color: $color-negro;
-        color: $color-blanco;
         margin: 0;
         border: 1px solid #000;
         flex-direction: column;
@@ -202,35 +187,33 @@ header {
 
 /* pagina nosotros*/
 
+
+   
+
+
 .padre__nosotros {
+
     background-color: $color-negro;
     border: $color-naranja 3px solid;
     margin-bottom: 20vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "imagenos"
-    "textonos"
-    ;
-    
-}
-
-.padre__nosotros {
-
     display: flex;
     flex-direction: column;
-    width: 80%;
+    align-items: center;
+    justify-content: center;
+    width: $porciento - 40;
+
+    
 
     .img__nosotros {
         width: 100%;
-        height: 110vh;
+        height: 60vh;
         padding: 5vh;
+        padding-bottom: 0;
     }
 
     .texto__nosotros {
         color: $color-blanco;
-        padding: 10vh;
+        padding: 2vh;
         grid-area: textonos;
         font-size: 1.5rem;
         font-family: $fuente;
@@ -239,14 +222,6 @@ header {
 
 }
 
-.texto__nosotros {
-    color: $color-blanco;
-    padding: 10vh;
-    grid-area: textonos;
-    font-size: 1.5rem;
-    font-family: $fuente;
-
-}
 
 /*pagina diseños*/
 .contenedor__diseños {

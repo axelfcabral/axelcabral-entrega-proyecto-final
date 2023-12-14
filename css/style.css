@@ -12,6 +12,7 @@
   src: url(../fuentes/BebasNeue-Regular.ttf);
 }
 /*variables*/
+/*mixins*/
 /*inicio header*/
 header {
   width: 100%;
@@ -30,8 +31,8 @@ header {
   height: 100%;
 }
 .menu .contenedor__logo .texto__logo {
-  color: #fff;
   font-family: Helvetica, sans-serif;
+  color: #fff;
   font-size: 3rem;
   text-decoration: none;
   font-weight: bold;
@@ -51,10 +52,9 @@ header {
   margin-top: 3vh;
 }
 .navegacion__nav a {
-  color: #fff;
-  font-size: large;
   font-family: "BebasNeue-Regular";
-  font-size: 1.7rem;
+  color: #fff;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -80,8 +80,9 @@ header {
 }
 .padre__titulo .titulo__tienda {
   font-family: "BebasNeue-Regular";
-  margin-top: 10px;
+  color: #232323;
   font-size: 2rem;
+  margin-top: 10px;
 }
 
 /*contenido de las paginas*/
@@ -92,12 +93,6 @@ header {
 }
 
 /*tienda*/
-.titulo__tienda {
-  font-family: "BebasNeue-Regular";
-  margin-top: 10px;
-  font-size: 2rem;
-}
-
 .padre__remeras {
   display: flex;
   flex-direction: row;
@@ -129,11 +124,11 @@ header {
 }
 .padre__remeras .descripcion {
   font-family: "BebasNeue-Regular";
+  color: #fff;
   font-size: 1.5rem;
   font-style: italic;
   display: flex;
   background-color: #232323;
-  color: #fff;
   margin: 0;
   border: 1px solid #000;
   flex-direction: column;
@@ -159,33 +154,21 @@ header {
   background-color: #232323;
   border: #f18705 3px solid;
   margin-bottom: 20vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "imagenos" "textonos";
-}
-
-.padre__nosotros {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
 }
 .padre__nosotros .img__nosotros {
   width: 100%;
-  height: 110vh;
+  height: 60vh;
   padding: 5vh;
+  padding-bottom: 0;
 }
 .padre__nosotros .texto__nosotros {
   color: #fff;
-  padding: 10vh;
-  grid-area: textonos;
-  font-size: 1.5rem;
-  font-family: "BebasNeue-Regular";
-}
-
-.texto__nosotros {
-  color: #fff;
-  padding: 10vh;
+  padding: 2vh;
   grid-area: textonos;
   font-size: 1.5rem;
   font-family: "BebasNeue-Regular";
@@ -450,14 +433,13 @@ footer a {
   .padre__nosotros {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
   .padre__nosotros .img__nosotros {
     width: 100%;
-    padding: 10vh;
+    height: 40vh;
   }
   .padre__nosotros .texto__nosotros {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   /*comienzo diseños*/
   .contenedor__banana, .contenedor__cajon, .contenedor__ojo {

@@ -7,6 +7,7 @@
 /*variables*/
 
 $fuente :"BebasNeue-Regular";
+$fuente2:Helvetica, sans-serif;
 $porciento: 100% ;
 $fuente-rem: 1rem ;
 $altura-vh:1vh;
@@ -14,4 +15,16 @@ $ancho-vh:1vh;
 $color-naranja:#f18705;
 $color-negro:#232323;
 $color-blanco:#fff;
-$pixel: 10px
+$pixel: 10px;
+
+
+/*mixins*/
+
+@mixin basico( $letra , $colorletra , $tamanioletra) {
+
+    font-family: $letra;
+    color: $colorletra;
+    font-size: $tamanioletra;
+
+
+}
