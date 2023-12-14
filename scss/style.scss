@@ -428,6 +428,37 @@ footer a {
     
 }
 
+/*error 404*/
+.body__error{
+    
+    background-color: #232323;
+
+    .titulo__error{
+    
+        color: $color-naranja;
+        font-family: $fuente;
+        margin: 5vh;
+        font-size: 4rem;
+    
+    }
+    .parrafo__error{
+        color: $color-naranja;
+        font-family: $fuente;
+        margin: 5vh;
+        font-size: 2rem;
+
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 5vh;
+        color: $color-naranja
+    }
+
+}
+
+
 
 /*queries*/
 

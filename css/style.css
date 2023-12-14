@@ -315,6 +315,29 @@ footer a {
   color: #333;
 }
 
+/*error 404*/
+.body__error {
+  background-color: #232323;
+}
+.body__error .titulo__error {
+  color: #f18705;
+  font-family: "BebasNeue-Regular";
+  margin: 5vh;
+  font-size: 4rem;
+}
+.body__error .parrafo__error {
+  color: #f18705;
+  font-family: "BebasNeue-Regular";
+  margin: 5vh;
+  font-size: 2rem;
+}
+.body__error a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 5vh;
+  color: #f18705;
+}
+
 /*queries*/
 /* breackpoint 1361px*/
 @media (max-width: 1361px) {
